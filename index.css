@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(to right, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.container{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.container h1{
+    margin-top: 20px;
+    color: rgb(216, 20, 20);
+}
+.container .conutdown{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+.container .conutdown div{
+    font-size: 35px;
+    font-weight: 900;
+    margin: auto;
+    color: rgb(24, 27, 27);
+}
+.container .conutdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    font-size: 16px;
+    color: rgb(199, 90, 0);
+}
+#days::before{
+    content: "days";
+}
+#hours::before{
+    content: "hours";
+}
+#minutes::before{
+    content: "minutes";
+}
+#seconds::before{
+    content: "seconds";
+}
