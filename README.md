@@ -1,0 +1,1 @@
+<img src="/image/countdown.png" title="countdown">
